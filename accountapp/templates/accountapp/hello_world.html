@@ -14,20 +14,19 @@
         <form action="/accounts/hello_world/" method="post">
             {% csrf_token %}
 
-            <div class="row g-2" style="max-width: 900px; margin: auto;">
-  <div class="col-md">
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-      <label for="floatingInputGrid">Email address</label>
-    </div>
-  </div>
-</div>
-
-
-
-            <button type="submit" class="btn btn-primary" type="submit" value="Submit" style="margin: auto;">>
+            <div class="row g-2" style="max-width: 500px; margin: auto;">
+                 <div class="col-md flex">
+                    <div class="form-floating inline-block">
+                         <input type="email" name="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                         <label for="floatingInputGrid">Email address</label>
+                    </div>
+                     <button type="submit" class="btn btn-primary my-5 inline-block" type="submit" value="Submit">
                 Submit
             </button>
+                 </div>
+            </div>
+
+
         </form>
     </div>
 
