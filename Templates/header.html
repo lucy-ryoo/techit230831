@@ -9,6 +9,13 @@
          <span>nav2</span>
          <span>nav3</span>
          {% if user.is_authenticated %}
+
+         <span>
+             <a href="{% url 'accountapp:detail' pk=user.pk %}">
+                 MyPage
+             </a>
+         </span>
+
          <span>
              <a href="{% url 'accountapp:logout' %}">
                  Logout
